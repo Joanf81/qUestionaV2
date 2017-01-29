@@ -9,13 +9,23 @@ Ahora, al entrar en la plicación, primero nos pedirá que nos logueemos con un 
 ### Backend
 El backend de la aplicación es un servicio web compuesto de varios Java Servlets, cuya función es comunicar la vista con la base de datos, y así permitir la persistencia de datos. Cada Servlet representa una acción que se puede realizar sobre los cuestionarios, como listar preguntas, borrar cuestionario, nueva pregunta, etc,.. Cuando un usuario realiza una acción sobre la vista de la aplicación, esta llama al servlet correspondiente, que se encarga de consultar o modificar la base de datos, dependiendo de la acción que ha realizado el usuario.
 
-## Frontend
+### Frontend
 El frontend es el mismo que el de la versión anterior, solo que ahora se ha introducido la tecnología Java Server Pages (JSP) para permitir a las vistas comunicarse con el backend. Además, se ha añadido una nueva pagina 'welcome.jsp' que permite loguarse en la aplicación, y donde el usuario es redirigido en caso de no estar logueado.
 
-## Motor de persistencia de datos
-Dado que la aplicación está diseñada para implantarse en la plataforma GAE, los datos se almacenan en el DataStore, la base de datos de tipo NoSQL de Google App Engine
+### Motor de persistencia de datos
+Dado que la aplicación está diseñada para implantarse en la plataforma GAE, los datos se almacenan en Google Cloud Datastore, la base de datos de tipo NoSQL sin esquemas de Google App Engine.
 
+## Modelo de datos
 
+## Despligue de la aplicación
+
+## Implantación en Google App Engine 
+
+## Probada en...
+
+## Nuevas tecnologías añadidas
+
+## Autor
 GAE
 Java Servltes
 NoSQL

@@ -1,0 +1,16 @@
+<!-- Indices written at Sat, 28 Jan 2017 16:49:55 CET -->
+
+<datastore-indexes>
+
+    <!-- Used 1 time in query history -->
+    <datastore-index kind="Cuestionario" ancestor="true" source="auto">
+        <property name="tema" direction="asc"/>
+    </datastore-index>
+
+    <!-- Used 2 times in query history -->
+    <datastore-index kind="Pregunta" ancestor="true" source="auto">
+        <property name="tema" direction="asc"/>
+        <property name="pregunta" direction="asc"/>
+    </datastore-index>
+
+</datastore-indexes>

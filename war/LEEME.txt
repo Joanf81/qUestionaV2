@@ -1,0 +1,11 @@
+Para realizar la implementación del ap rimerap regunta he seguido los siguientes pasos:
+
+1. Crear un servlet que atienda la peticion /borradatos y que borre todos los cuestionarios y preguntas del usuario actual.
+
+	Para ello, uso una consulta para obtener todos los temas del usuario, recorro dichos temas con un for y, para cada uno,
+	uso otra consulta para obtener las preguntas de cada cuestionario. Luego, elimino uno a uno todos los cuestionarios
+	y preguntas del datastore.
+	
+2. Incluir un enlace en main.jsp que, previa confirmacion, invoque una peticion ajax al servlet BorrarDatos(/borradatos).
+
+3. Recargar pagina si la peticion se realiza con exito.

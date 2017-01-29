@@ -25,7 +25,7 @@ Para compilar y desplegar aplicación en un servidor local, puedes importar el p
 
 ## Implantación en Google App Engine 
 Para implantar la aplicación en la plataforma GAE, es necesario, antes de compilar el código, editar el fichero 'WEB-INF/lib/appengine-web.xml' y añadir el Application ID, proporcionado por la plataforma GAE, dentro de las etiquetas 'application', como se muestra a continuación:  
-`<?xml version="1.0" encoding="utf-8"?>` 
+`<?xml version="1.0" encoding="utf-8"?>`  
 `<appengine-web-app xmlns="http://appengine.google.com/ns/1.0">`  
 `<application><!-- YOUR APP ID OF GAE --></application>`  
 `<version>1</version>`  
@@ -38,25 +38,25 @@ La aplicación ha sido correctamente compilada y probada en el siguiente sistema
 `App Engine API v1.9.34`  
 
 La interfaz de la aplicación ha sido testada correctamente con el siguiente navegador:  
-`Mozilla Firefox 46.0 for Ubuntu`
+`Mozilla Firefox 46.0 for Ubuntu`  
 
 ## Nuevas tecnologías añadidas
 Esta aplicación usa todas las tecnologías mencionadas en [qUestionaV1](https://github.com/Joanf81/qUestionaV1 "qUestionaV1"), pero a parte, se añaden las siguinetes:
 
-Java https://www.java.com/
-Java EE http://www.oracle.com/technetwork/java/javaee/overview/index.html
-Java Servlets http://www.oracle.com/technetwork/java/index-jsp-135475.html
-Java Server Pages (JSP) http://www.oracle.com/technetwork/java/javaee/jsp/index.html
-JavaScript Object Notation (JSON) http://www.w3schools.com/js/js_json_intro.asp
+Java https://www.java.com/  
+Java EE http://www.oracle.com/technetwork/java/javaee/overview/index.html  
+Java Servlets http://www.oracle.com/technetwork/java/index-jsp-135475.html  
+Java Server Pages (JSP) http://www.oracle.com/technetwork/java/javaee/jsp/index.html  
+JavaScript Object Notation (JSON) http://www.w3schools.com/js/js_json_intro.asp  
+  
+Cloud computing https://en.wikipedia.org/wiki/Cloud_computing  
+Platform as a Service (PaaS) https://en.wikipedia.org/wiki/Platform_as_a_service  
+Google App Engine (GAE) https://cloud.google.com/appengine/  
 
-Cloud computing https://en.wikipedia.org/wiki/Cloud_computing
-Platform as a Service (PaaS) https://en.wikipedia.org/wiki/Platform_as_a_service
-Google App Engine (GAE) https://cloud.google.com/appengine/
-
-NoSQL http://nosql-database.org/
-Datastore https://cloud.google.com/datastore/
-
-Eclipse IDE for Java EE Developers http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/mars2
+NoSQL http://nosql-database.org/  
+Datastore https://cloud.google.com/datastore/  
+  
+Eclipse IDE for Java EE Developers http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/mars2  
 
 ## Autor
 Aplicación completamente desarrollada por Joan Fsernández Bornay.

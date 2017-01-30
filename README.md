@@ -1,9 +1,9 @@
 # qUestionaV2
 
-## Introducción
-qUestionV2 es una mejora de la applicación [qUestionaV1](https://github.com/Joanf81/qUestionaV1 "qUestionaV1") donde se introduce un backend que gestiona una base de datos con la información de los cuestionarios. La aplicación está preparada para implantarse en la plataforma de computación en la nube Google App Engine (GAE).  
+## Introduction
+qUestionaV2 is a improvement of [qUestionaV1](https://github.com/Joanf81/qUestionaV1 "qUestionaV1") that introduces a backend for managing a data base with the information of the questionnaires. The application is prepared to be implemented in the Google App Engine (GAE) cloud computing platform.
 
-Ahora, al entrar en la plicación, primero nos pedirá que nos logueemos con un usuario de Google (si estamos trabajando con un servidor local, este usuario no tiene porque ser valido), una vez logueados podremos trabajar con los cuestionarios de la misma forma que en [qUestionaV1](https://github.com/Joanf81/qUestionaV1 "qUestionaV1"), solo que ahora, cualquier cambio que hagamos quedara registrado en la base de datos, y cuando volvamos a acceder con el mismo usuario, recuperaremos los cuestionarios almacenados.  
+Now, when entering the application, it first will ask us about our Google login (if we are working on a local server, this login may not to be valid). Once we are logged in, we can work on the questionnaires on the same way we did on [qUestionaV1](https://github.com/Joanf81/qUestionaV1 "qUestionaV1"), but now, anay changes we make will be recorded in the data base, and if we re-enter the application using the same login, the data of the questionnaires will be recovered.
 
 ## Estructura de la aplicación
 ### Backend

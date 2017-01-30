@@ -5,10 +5,10 @@ qUestionaV2 is a improvement of [qUestionaV1](https://github.com/Joanf81/qUestio
 
 Now, when entering the application, it first will ask us about our Google login (if we are working on a local server, this login may not to be valid). Once we are logged in, we can work on the questionnaires on the same way we did on [qUestionaV1](https://github.com/Joanf81/qUestionaV1 "qUestionaV1"), but now, anay changes we make will be recorded in the data base, and if we re-enter the application using the same login, the data of the questionnaires will be recovered.
 
-## Estructura de la aplicación
+## Application's Skeleton
 ### Backend
-El backend de la aplicación es un servicio web compuesto de varios Java Servlets, cuya función es comunicar la vista con la base de datos, y así permitir la persistencia de datos. Cada Servlet representa una acción que se puede realizar sobre los cuestionarios, como listar preguntas, borrar cuestionario, nueva pregunta, etc,.. Cuando un usuario realiza una acción sobre la vista de la aplicación, esta llama al servlet correspondiente, que se encarga de consultar o modificar la base de datos, dependiendo de la acción que ha realizado el usuario.  
-Para el intercambio de datos entre el backend y el fronted se ha usado el lenguaje JavaScript Object Notation (JSON).
+The application's backend is a web service compund of a combination of Java Servlets, whose function is to communicate the view with the data base, allowing the data persistence. Each servlets represents an action that can be done on the questionnaires, like list questions, delete questionnaires, create new question, etc,.. When a user performs an action on the application's view, this calls the corresponding servlet, that is responsible for consulting or updating the data base, depending on the action that the user performed.
+For de exchange of data beetwen the backside and frontisde, Javascript Object Notation (JSON) has been used.
 
 ### Frontend
 El frontend es el mismo que el de la versión anterior, solo que ahora se ha introducido la tecnología Java Server Pages (JSP) para permitir a las vistas comunicarse con el backend. Además, se ha añadido una nueva pagina 'welcome.jsp' que permite loguarse en la aplicación, y donde el usuario es redirigido en caso de no estar logueado.

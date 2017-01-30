@@ -3,20 +3,22 @@
 ## Introduction
 qUestionaV2 is a improvement of [qUestionaV1](https://github.com/Joanf81/qUestionaV1 "qUestionaV1") that introduces a backend for managing a data base with the information of the questionnaires. The application is prepared to be implemented in the Google App Engine (GAE) cloud computing platform.
 
-Now, when entering the application, it first will ask us about our Google login (if we are working on a local server, this login may not to be valid). Once we are logged in, we can work on the questionnaires on the same way we did on [qUestionaV1](https://github.com/Joanf81/qUestionaV1 "qUestionaV1"), but now, anay changes we make will be recorded in the data base, and if we re-enter the application using the same login, the data of the questionnaires will be recovered.
+Now, when entering the application, it first will ask us about our Google login (if we are working on a local server, this login may not to be valid). Once we are logged in, we can work on the questionnaires on the same way we did on [qUestionaV1](https://github.com/Joanf81/qUestionaV1 "qUestionaV1"), but now, anay changes we make will be recorded in the database, and if we re-enter the application using the same login, the data of the questionnaires will be recovered.
 
 ## Application's Skeleton
 ### Backend
-The application's backend is a web service compund of a combination of Java Servlets, whose function is to communicate the view with the data base, allowing the data persistence. Each servlets represents an action that can be done on the questionnaires, like list questions, delete questionnaires, create new question, etc,.. When a user performs an action on the application's view, this calls the corresponding servlet, that is responsible for consulting or updating the data base, depending on the action that the user performed.
+The application's backend is a web service compund of a combination of Java Servlets, whose function is to communicate the view with the database, allowing the data persistence. Each servlets represents an action that can be done on the questionnaires, like list questions, delete questionnaires, create new question, etc,.. When a user performs an action on the application's view, this calls the corresponding servlet, that is responsible for consulting or updating the database, depending on the action that the user performed.
 For de exchange of data beetwen the backside and frontisde, Javascript Object Notation (JSON) has been used.
 
 ### Frontend
-El frontend es el mismo que el de la versión anterior, solo que ahora se ha introducido la tecnología Java Server Pages (JSP) para permitir a las vistas comunicarse con el backend. Además, se ha añadido una nueva pagina 'welcome.jsp' que permite loguarse en la aplicación, y donde el usuario es redirigido en caso de no estar logueado.
+The application uses the same frontend as in the previous version, but now it introduces the Java Server Pages (JSP) tecnology, that allows the view to communicate with the backend. Also, it has been added a new page called 'welcome.jsp' that allows the user to login in the application, and where the user is redirected in case of not being logged.
 
-### Motor de persistencia de datos
-Dado que la aplicación está diseñada para implantarse en la plataforma GAE, los datos se almacenan en Google Cloud Datastore, la base de datos de tipo NoSQL sin esquemas de Google App Engine.
+### Data persistence engine
+Since the application is designed to be implanted on the GAE platform, the data will be stored in the Google Cloud Datastore, a NoSQL squemaless database used by Google App Engine.
 
 ## Modelo de datos
+Data are organized in the datastore as follows, each user has an User type entity that will be the ancestor of the 
+
 En el datastore los datos estan organizados de la siguiente forma, cada usuario tiene una entidad de tipo Usuario que servirá de ancestro a las entidades de tipo Cuestionario y Pregunta. Las preguntas tendran como ancestro la entidad de tipo usuario, pero tendrán un atributo llamado tema para saber a que cuestionario pertenecen.
 
 ## Despligue de la aplicación

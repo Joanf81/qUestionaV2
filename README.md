@@ -16,12 +16,12 @@ The application uses the same frontend as in the previous version, but now it in
 ### Data persistence engine
 Since the application is designed to be implanted on the GAE platform, the data will be stored in the Google Cloud Datastore, a NoSQL squemaless database used by Google App Engine.
 
-## Modelo de datos
-Data are organized in the datastore as follows, each user has an User type entity that will be the ancestor of the 
+## Data Model
+Data are organized in the datastore as follows, each user has an User type entity that will be the ancestor of the entities of type Questionnaire and Question. The question's ancestor is the User type entity, but the question entity has a attribute called 'tema'(topic), that allows us to known which questionnaire belongs the question. 
 
-En el datastore los datos estan organizados de la siguiente forma, cada usuario tiene una entidad de tipo Usuario que servirá de ancestro a las entidades de tipo Cuestionario y Pregunta. Las preguntas tendran como ancestro la entidad de tipo usuario, pero tendrán un atributo llamado tema para saber a que cuestionario pertenecen.
+## Application deployment
 
-## Despligue de la aplicación
+
 Para compilar y desplegar aplicación en un servidor local, puedes importar el proyecto desde eclipse, compilarlo y ejecutarlo como una aplicación de tipo Web Application. Una vez lanzada, la aplicación puede ser accedida a traves de nuestro navegar web usando la siguiente URL:  
 `http://localhost:8888/`  
 

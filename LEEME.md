@@ -8,7 +8,7 @@ Ahora, al entrar en la plicación, primero nos pedirá que nos logueemos con un 
 
 ## Estructura de la aplicación
 ### Backend
-El backend de la aplicación es un servicio web compuesto de varios Java Servlets, cuya función es comunicar la vista con la base de datos, y así permitir la persistencia de datos. Cada Servlet representa una acción que se puede realizar sobre los cuestionarios, como listar preguntas, borrar cuestionario, nueva pregunta, etc,.. Cuando un usuario realiza una acción sobre la vista de la aplicación, esta llama al servlet correspondiente, que se encarga de consultar o modificar la base de datos, dependiendo de la acción que ha realizado el usuario.  
+El backend de la aplicación es un servicio web compuesto de varios Java Servlets, cuya función es comunicar la vista con la base de datos, y así permitir la persistencia de datos. Cada Servlet representa una acción que se puede realizar sobre los cuestionarios, como listar preguntas, borrar cuestionario, nueva pregunta, etc,.. Cuando un usuario realiza una acción sobre la vista de la aplicación, esta llama al servlet correspondiente, que se encarga de consultar o modificar la base de datos, dependiendo de la acción que haya realizado el usuario.  
 Para el intercambio de datos entre el backend y el fronted se ha usado el lenguaje JavaScript Object Notation (JSON).
 
 ### Frontend

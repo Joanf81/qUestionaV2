@@ -20,30 +20,28 @@ Since the application is designed to be implanted on the GAE platform, the data 
 Data are organized in the datastore as follows, each user has an User type entity that will be the ancestor of the entities of type Questionnaire and Question. The question's ancestor is the User type entity, but the question entity has a attribute called 'tema'(topic), that allows us to known which questionnaire belongs the question. 
 
 ## Application deployment
-
-
-Para compilar y desplegar aplicación en un servidor local, puedes importar el proyecto desde eclipse, compilarlo y ejecutarlo como una aplicación de tipo Web Application. Una vez lanzada, la aplicación puede ser accedida a traves de nuestro navegar web usando la siguiente URL:  
+To compile and deploy the application on a local server, you can import the project form eclipse, then compile and run it as a web application. When the application is launched, it can be accesed through a web navigator using the newt URL:  
 `http://localhost:8888/`  
 
-## Implantación en Google App Engine 
-Para implantar la aplicación en la plataforma GAE, es necesario, antes de compilar el código, editar el fichero 'WEB-INF/lib/appengine-web.xml' y añadir el Application ID, proporcionado por la plataforma GAE, dentro de las etiquetas 'application', como se muestra a continuación:  
+## Implementing on Google App Engine
+To implement it in the GAE platform, it's necesary, before compiling the code, to edit the 'WEB-INF/lib/appengine-web.xml' file and add the GAE platform Application ID code between the 'application' xml tags as shown belong:  
 `<?xml version="1.0" encoding="utf-8"?>`  
 `<appengine-web-app xmlns="http://appengine.google.com/ns/1.0">`  
 `<application><!-- YOUR APP ID OF GAE --></application>`  
 `<version>1</version>`  
 
-## Probada en...
-La aplicación ha sido correctamente compilada y probada en el siguiente sistema:  
+## Tested in...
+The application has been correctly complied and runned on the next system:  
 `Ubuntu Linux 14.04 LTS`  
 `Eclipse Mars.2 Release (4.5.2) Java EE IDE for Web Developers.`  
 `Java SDK 1.7`  
 `App Engine API v1.9.34`  
 
-La interfaz de la aplicación ha sido testada correctamente con el siguiente navegador:  
+The application's view has been corrtley tested using the next nevigator:  
 `Mozilla Firefox 46.0 for Ubuntu`  
 
-## Nuevas tecnologías añadidas
-Esta aplicación usa todas las tecnologías mencionadas en [qUestionaV1](https://github.com/Joanf81/qUestionaV1 "qUestionaV1"), pero a parte, se añaden las siguinetes:
+## New technologies added
+This application uses all the technologies mentioned in [qUestionaV1](https://github.com/Joanf81/qUestionaV1 "qUestionaV1"), but aside, it introduces the next:  
 
 Java https://www.java.com/  
 Java EE http://www.oracle.com/technetwork/java/javaee/overview/index.html  
@@ -60,5 +58,5 @@ Datastore https://cloud.google.com/datastore/
   
 Eclipse IDE for Java EE Developers http://www.eclipse.org/downloads/packages/eclipse-ide-java-ee-developers/mars2  
 
-## Autor
-Aplicación completamente desarrollada por Joan Fsernández Bornay.
+## Author
+Application completly developed by Joan Fernández Bornay.
